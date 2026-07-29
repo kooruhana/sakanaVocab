@@ -34,11 +34,10 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
       await session.addCurrentToBook();
     }),
     vscode.commands.registerCommand('sakanaVocab.dailyProgress', async () => {
-      const s = store.getProgressSummary();
-      const t = s.today;
-      await vscode.window.showInformationMessage(
-        `Sakana today (${t.date}): ${t.reviews} reviews · ${t.newWords} new · ${t.remembered} remembered · ${t.forgot} forgot | lifetime learned ${s.totalLearned} · due ${s.dueToday} · book ${s.bookSize}`
-      );
+      await showTodayFlow();
+    }),
+    vscode.commands.registerCommand('sakanaVocab.learnMore', async () => {
+      await learnMoreFlow();
     }),
     vscode.commands.registerCommand('sakanaVocab.lookup', async () => {
       await lookupFlow();
@@ -51,10 +50,117 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 
   const status = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
   status.text = '$(book) Sakana';
-  status.tooltip = 'Sakana Vocabulary — Ctrl+Alt+S';
-  status.command = 'sakanaVocab.start';
+  status.tooltip = 'Sakana Vocabulary — Ctrl+Alt+S · Today: Ctrl+Alt+D';
+  status.command = 'sakanaVocab.dailyProgress';
   status.show();
   context.subscriptions.push(status);
+}
+
+async function showTodayFlow(): Promise<void> {
+  const config = vscode.workspace.getConfiguration('sakanaVocab');
+  const dailyNewLimit = config.get<number>('dailyNewLimit', 20);
+  const summary = store.getProgressSummary();
+  const learned = store.getTodayLearnedEntries();
+  const cap = store.getTodayNewWordCap(dailyNewLimit);
+  const remainingSlots = Math.max(0, cap - summary.today.newWords);
+
+  type Item = vscode.QuickPickItem & {
+    action?: 'more10' | 'moreCustom' | 'start' | 'details';
+    entry?: VocabEntry;
+  };
+
+  const items: Item[] = [
+    {
+      label: `$(add) Learn 10 more`,
+      description: summary.remainingUnseen > 0 ? `${summary.remainingUnseen} left in dictionary` : 'none left',
+      detail: `Today ${summary.today.newWords}/${cap} new · unlock 10 extra beyond the daily goal`,
+      action: 'more10',
+    },
+    {
+      label: `$(add) Learn more…`,
+      description: 'Choose how many',
+      action: 'moreCustom',
+    },
+    {
+      label: `$(play) Continue studying`,
+      description: remainingSlots > 0 ? `${remainingSlots} new slot(s) left today` : 'reviews / already unlocked extras',
+      action: 'start',
+    },
+  ];
+
+  if (learned.length === 0) {
+    items.push({
+      label: 'No new words learned yet today',
+      description: summary.today.date,
+    });
+  } else {
+    items.push({
+      label: `Today’s new words (${learned.length})`,
+      kind: vscode.QuickPickItemKind.Separator,
+    });
+    for (const e of learned) {
+      items.push({
+        label: e.word,
+        description: e.ipa,
+        detail: `${e.meaning}${e.level ? ` · ${e.level}` : ''}`,
+        action: 'details',
+        entry: e,
+      });
+    }
+  }
+
+  const picked = await vscode.window.showQuickPick(items, {
+    title: `Sakana — Today (${summary.today.date}) · ${summary.today.newWords} new · ${summary.today.reviews} reviews`,
+    matchOnDescription: true,
+    matchOnDetail: true,
+    placeHolder: 'Pick a word to inspect, or learn more',
+  });
+  if (!picked) {
+    return;
+  }
+
+  if (picked.action === 'more10') {
+    await session.learnMore(10);
+    return;
+  }
+  if (picked.action === 'moreCustom') {
+    await learnMoreFlow();
+    return;
+  }
+  if (picked.action === 'start') {
+    await session.start();
+    return;
+  }
+  if (picked.entry) {
+    await showEntryActions(picked.entry, store.isInBook(picked.entry.id));
+  }
+}
+
+async function learnMoreFlow(): Promise<void> {
+  const remaining = store.countRemainingUnseen();
+  if (remaining <= 0) {
+    vscode.window.showInformationMessage('No more new dictionary words left to learn.');
+    return;
+  }
+  const raw = await vscode.window.showInputBox({
+    title: 'Sakana Vocabulary — Learn more',
+    prompt: `How many extra new words today? (${remaining} still unseen)`,
+    value: '10',
+    validateInput: (v) => {
+      const n = Number(v);
+      if (!Number.isInteger(n) || n < 1) {
+        return 'Enter a whole number ≥ 1';
+      }
+      if (n > 200) {
+        return 'Keep it ≤ 200 per unlock';
+      }
+      return undefined;
+    },
+  });
+  if (raw === undefined) {
+    return;
+  }
+  await session.learnMore(Math.min(Number(raw), remaining));
 }
 
 async function lookupFlow(): Promise<void> {

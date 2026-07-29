@@ -2,7 +2,7 @@
   "name": "sakana-vocabulary",
   "displayName": "Sakana Vocabulary",
   "description": "Terminal-stealth French vocabulary trainer with spaced repetition for language learners.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "sakana",
   "engines": {
     "vscode": "^1.85.0"
@@ -26,7 +26,8 @@
     "onCommand:sakanaVocab.reveal",
     "onCommand:sakanaVocab.openBook",
     "onCommand:sakanaVocab.addToBook",
-    "onCommand:sakanaVocab.dailyProgress"
+    "onCommand:sakanaVocab.dailyProgress",
+    "onCommand:sakanaVocab.learnMore"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -65,7 +66,11 @@
       },
       {
         "command": "sakanaVocab.dailyProgress",
-        "title": "Sakana Vocabulary: Show Daily Progress"
+        "title": "Sakana Vocabulary: Today’s Words / Progress"
+      },
+      {
+        "command": "sakanaVocab.learnMore",
+        "title": "Sakana Vocabulary: Learn More New Words"
       },
       {
         "command": "sakanaVocab.lookup",
@@ -119,6 +124,11 @@
         "mac": "cmd+alt+d"
       },
       {
+        "command": "sakanaVocab.learnMore",
+        "key": "ctrl+alt+m",
+        "mac": "cmd+alt+m"
+      },
+      {
         "command": "sakanaVocab.lookup",
         "key": "ctrl+alt+l",
         "mac": "cmd+alt+l"
@@ -132,7 +142,7 @@
           "default": 20,
           "minimum": 1,
           "maximum": 200,
-          "description": "Maximum number of new words introduced per day."
+          "description": "Default daily goal for new words. You can still unlock more anytime via “Learn more” (Ctrl+Alt+M)."
         },
         "sakanaVocab.defaultView": {
           "type": "string",

@@ -52,6 +52,13 @@ export interface DailyStats {
   newWords: number;
   forgot: number;
   remembered: number;
+  /** Word ids newly introduced today (for today's list) */
+  newWordIds?: string[];
+  /**
+   * Extra new-word slots unlocked beyond sakanaVocab.dailyNewLimit
+   * (e.g. user chose “Learn 10 more”).
+   */
+  extraNewAllowance?: number;
 }
 
 export interface UserData {

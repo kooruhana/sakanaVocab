@@ -41,6 +41,12 @@ export class VocabWebviewPanel {
         case 'book':
           await vscode.commands.executeCommand('sakanaVocab.openBook');
           break;
+        case 'today':
+          await vscode.commands.executeCommand('sakanaVocab.dailyProgress');
+          break;
+        case 'more':
+          await this.session.learnMore(10);
+          break;
       }
     });
     this.panel.onDidDispose(() => {
@@ -79,7 +85,14 @@ export class VocabWebviewPanel {
   render(
     card: StudyCard | undefined,
     info: { index: number; total: number },
-    summary: { totalLearned: number; dueToday: number; bookSize: number; today: DailyStats }
+    summary: {
+      totalLearned: number;
+      dueToday: number;
+      bookSize: number;
+      today: DailyStats;
+      todayLearnedCount?: number;
+      remainingUnseen?: number;
+    }
   ): void {
     if (this.disposed) {
       return;
@@ -226,6 +239,8 @@ export class VocabWebviewPanel {
       <button data-cmd="next">Next</button>
       <button class="warn" data-cmd="forgot">Forgot</button>
       <button data-cmd="add">Add to book</button>
+      <button data-cmd="today">Today's words</button>
+      <button data-cmd="more">Learn 10 more</button>
       <button data-cmd="book">Vocabulary book</button>
       <button data-cmd="lookup">Lookup</button>
       <button data-cmd="toggle">Terminal view</button>
@@ -268,7 +283,8 @@ export class VocabWebviewPanel {
       document.getElementById('stats').innerHTML =
         '<span>learned ' + summary.totalLearned + '</span>' +
         '<span>due ' + summary.dueToday + '</span>' +
-        '<span>today ' + summary.today.reviews + ' reviews</span>' +
+        '<span>today ' + (summary.todayLearnedCount ?? summary.today.newWords) + ' new</span>' +
+        '<span>' + summary.today.reviews + ' reviews</span>' +
         '<span>book ' + summary.bookSize + '</span>';
     });
     function escapeHtml(s) {

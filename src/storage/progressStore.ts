@@ -135,16 +135,55 @@ export class ProgressStore {
         newWords: 0,
         forgot: 0,
         remembered: 0,
+        newWordIds: [],
+        extraNewAllowance: 0,
       };
     }
-    return this.data.dailyStats[date];
+    const stats = this.data.dailyStats[date];
+    if (!stats.newWordIds) {
+      stats.newWordIds = [];
+    }
+    if (stats.extraNewAllowance === undefined) {
+      stats.extraNewAllowance = 0;
+    }
+    return stats;
+  }
+
+  /** Words newly introduced today (learning list). */
+  getTodayLearnedEntries(date = todayIso()): VocabEntry[] {
+    const stats = this.getDailyStats(date);
+    const fromStats = (stats.newWordIds ?? [])
+      .map((id) => this.byId.get(id))
+      .filter((e): e is VocabEntry => Boolean(e));
+    if (fromStats.length > 0) {
+      return fromStats;
+    }
+    // Fallback for older progress data without newWordIds
+    return Object.values(this.data.progress)
+      .filter((p) => p.introducedAt === date)
+      .map((p) => this.byId.get(p.wordId))
+      .filter((e): e is VocabEntry => Boolean(e))
+      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  }
+
+  /** Effective new-word cap for today (goal + unlocked extras). */
+  getTodayNewWordCap(dailyNewLimit: number, date = todayIso()): number {
+    const stats = this.getDailyStats(date);
+    return dailyNewLimit + (stats.extraNewAllowance ?? 0);
+  }
+
+  async unlockExtraNewWords(count: number, date = todayIso()): Promise<number> {
+    const stats = this.getDailyStats(date);
+    stats.extraNewAllowance = (stats.extraNewAllowance ?? 0) + Math.max(0, count);
+    await this.save();
+    return stats.extraNewAllowance;
   }
 
   /**
-   * Build today's study queue: due reviews first, then new words up to daily limit.
+   * Build today's study queue: due reviews first, then new words up to today's cap.
    * Prefer vocabulary-book words, then general dictionary.
    */
-  buildStudyQueue(dailyNewLimit: number): VocabEntry[] {
+  buildStudyQueue(dailyNewLimit: number, options?: { newOnly?: boolean }): VocabEntry[] {
     const today = todayIso();
     const bookIds = new Set(this.data.vocabularyBook);
     const due: VocabEntry[] = [];
@@ -159,7 +198,6 @@ export class ProgressStore {
       }
     };
 
-    // Book words first
     for (const id of this.data.vocabularyBook) {
       const e = this.byId.get(id);
       if (e) {
@@ -167,7 +205,6 @@ export class ProgressStore {
       }
     }
 
-    // Then rest of dictionary (already sorted easiest → hardest)
     for (const entry of this.dictionary) {
       if (bookIds.has(entry.id)) {
         continue;
@@ -175,25 +212,29 @@ export class ProgressStore {
       consider(entry);
     }
 
-    // Keep new words in pedagogical order (starter → A1 → … → C2)
     newOnes.sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
 
     const todayStats = this.getDailyStats(today);
-    const remainingNew = Math.max(0, dailyNewLimit - todayStats.newWords);
+    const cap = this.getTodayNewWordCap(dailyNewLimit, today);
+    const remainingNew = Math.max(0, cap - todayStats.newWords);
     const selectedNew = newOnes.slice(0, remainingNew);
 
-    // Stable-ish order: due (older due first by dueDate), then new
     due.sort((a, b) => {
       const da = this.data.progress[a.id]?.sm2.dueDate ?? today;
       const db = this.data.progress[b.id]?.sm2.dueDate ?? today;
       return da.localeCompare(db);
     });
 
-    const queue = [...due, ...selectedNew];
+    const queue = options?.newOnly ? selectedNew : [...due, ...selectedNew];
     this.data.lastSessionWordIds = queue.map((e) => e.id);
     this.data.lastSessionIndex = 0;
     void this.save();
     return queue;
+  }
+
+  /** How many brand-new dictionary words are still available after today's cap. */
+  countRemainingUnseen(): number {
+    return this.dictionary.filter((e) => !this.data.progress[e.id]).length;
   }
 
   restoreSession(): VocabEntry[] {
@@ -225,6 +266,12 @@ export class ProgressStore {
         introducedAt: today,
       };
       stats.newWords += 1;
+      if (!stats.newWordIds) {
+        stats.newWordIds = [];
+      }
+      if (!stats.newWordIds.includes(wordId)) {
+        stats.newWordIds.push(wordId);
+      }
     }
 
     entry.sm2 = reviewSm2(entry.sm2, quality, today);
@@ -252,14 +299,19 @@ export class ProgressStore {
     dueToday: number;
     bookSize: number;
     today: DailyStats;
+    todayLearnedCount: number;
+    remainingUnseen: number;
   } {
     const today = todayIso();
     const dueToday = Object.values(this.data.progress).filter((p) => isDue(p.sm2, today)).length;
+    const todayStats = this.getDailyStats(today);
     return {
       totalLearned: Object.keys(this.data.progress).length,
       dueToday,
       bookSize: this.data.vocabularyBook.length,
-      today: this.getDailyStats(today),
+      today: todayStats,
+      todayLearnedCount: this.getTodayLearnedEntries(today).length,
+      remainingUnseen: this.countRemainingUnseen(),
     };
   }
 }

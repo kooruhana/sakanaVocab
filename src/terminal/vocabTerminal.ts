@@ -53,17 +53,28 @@ export class VocabTerminal {
   render(
     card: StudyCard | undefined,
     info: { index: number; total: number },
-    summary: { totalLearned: number; dueToday: number; bookSize: number; today: DailyStats }
+    summary: {
+      totalLearned: number;
+      dueToday: number;
+      bookSize: number;
+      today: DailyStats;
+      todayLearnedCount?: number;
+      remainingUnseen?: number;
+    }
   ): void {
     this.clear();
     this.println(this.banner());
+    const learned = summary.todayLearnedCount ?? summary.today.newWords;
     this.println(
-      `session ${info.index + 1}/${info.total || 0}  |  due ${summary.dueToday}  |  today +${summary.today.reviews} reviews  |  book ${summary.bookSize}`
+      `session ${info.index + 1}/${info.total || 0}  |  due ${summary.dueToday}  |  today ${learned} new · ${summary.today.reviews} reviews  |  book ${summary.bookSize}`
     );
     this.println('─'.repeat(64));
 
     if (!card) {
-      this.println('No cards in queue. Try: Ctrl+Alt+L to lookup, Ctrl+Alt+B for book.');
+      this.println('No cards in queue.');
+      this.println('  today   — list words learned today');
+      this.println('  more    — learn 10 more new words');
+      this.println('  Ctrl+Alt+D — today’s list in UI');
       this.println('');
       this.print('sakana> ');
       return;
@@ -198,6 +209,25 @@ export class VocabTerminal {
       await this.session.toggleView();
       return;
     }
+    if (cmd === 'today' || cmd === 'd') {
+      await vscode.commands.executeCommand('sakanaVocab.dailyProgress');
+      this.print('sakana> ');
+      return;
+    }
+    if (cmd === 'more' || cmd === 'm') {
+      await this.session.learnMore(10);
+      return;
+    }
+    if (cmd.startsWith('more ')) {
+      const n = Number(cmd.slice(5).trim());
+      if (!Number.isInteger(n) || n < 1) {
+        this.println('usage: more [N]   e.g. more 10');
+        this.print('sakana> ');
+        return;
+      }
+      await this.session.learnMore(n);
+      return;
+    }
     if (cmd === 'q' || cmd === 'quit' || cmd === 'exit') {
       this.println('Session stays open — close the terminal tab to dismiss.');
       this.print('sakana> ');
@@ -210,7 +240,7 @@ export class VocabTerminal {
   private banner(): string {
     return [
       'sakana vocabulary — french mvp',
-      'type help · space reveal · n/p navigate · t ui · looks like a shell',
+      'type help · space reveal · n/p navigate · today · more · t ui',
     ].join('\r\n');
   }
 
@@ -222,10 +252,12 @@ export class VocabTerminal {
       '  p / prev      previous word',
       '  f / forgot    mark forgotten (review sooner)',
       '  a / add      add current word to vocabulary book',
+      '  today / d     list words learned today',
+      '  more [N]      learn more new words (default 10)',
       '  t / ui        toggle webview UI',
       '  help          this help',
       '',
-      'global shortcuts: Ctrl+Alt+S start · T toggle · N/P nav · R reveal · B book',
+      'global: Ctrl+Alt+S start · D today · M learn more · T toggle',
     ].join('\r\n');
   }
 

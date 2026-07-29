@@ -5,6 +5,14 @@ import { isDue, todayIso } from './srs/sm2';
 import { VocabTerminal } from './terminal/vocabTerminal';
 import { VocabWebviewPanel } from './webview/vocabPanel';
 
+export interface StartOptions {
+  preferredMode?: ViewMode;
+  /** Only queue brand-new words (used after “Learn more”). */
+  newOnly?: boolean;
+  /** Unlock this many extra new-word slots before building the queue. */
+  unlockExtra?: number;
+}
+
 export class StudySession {
   private queue: VocabEntry[] = [];
   private index = 0;
@@ -43,17 +51,47 @@ export class StudySession {
     return { index: this.index, total: this.queue.length };
   }
 
-  async start(preferredMode?: ViewMode): Promise<void> {
+  async start(preferredModeOrOptions?: ViewMode | StartOptions): Promise<void> {
+    const options: StartOptions =
+      typeof preferredModeOrOptions === 'string' || preferredModeOrOptions === undefined
+        ? { preferredMode: preferredModeOrOptions }
+        : preferredModeOrOptions;
+
     const config = vscode.workspace.getConfiguration('sakanaVocab');
     const dailyNewLimit = config.get<number>('dailyNewLimit', 20);
     const defaultView = config.get<ViewMode>('defaultView', 'terminal');
-    this.mode = preferredMode ?? defaultView;
+    this.mode = options.preferredMode ?? defaultView;
 
-    this.queue = this.store.buildStudyQueue(dailyNewLimit);
-    if (this.queue.length === 0) {
-      // Fallback: allow browsing dictionary even if daily new limit hit and nothing due
-      this.queue = this.store.getDictionary().slice(0, 50);
+    if (options.unlockExtra && options.unlockExtra > 0) {
+      await this.store.unlockExtraNewWords(options.unlockExtra);
     }
+
+    this.queue = this.store.buildStudyQueue(dailyNewLimit, { newOnly: options.newOnly });
+    if (this.queue.length === 0) {
+      const summary = this.store.getProgressSummary();
+      const cap = this.store.getTodayNewWordCap(dailyNewLimit);
+      if (summary.today.newWords >= cap && summary.remainingUnseen > 0) {
+        const pick = await vscode.window.showInformationMessage(
+          `Today’s goal is done (${summary.today.newWords}/${cap} new). Learn more?`,
+          'Learn 10 more',
+          'Choose amount…',
+          'View today’s words'
+        );
+        if (pick === 'Learn 10 more') {
+          await this.learnMore(10);
+          return;
+        }
+        if (pick === 'Choose amount…') {
+          await vscode.commands.executeCommand('sakanaVocab.learnMore');
+          return;
+        }
+        if (pick === 'View today’s words') {
+          await vscode.commands.executeCommand('sakanaVocab.dailyProgress');
+          return;
+        }
+      }
+    }
+
     this.index = 0;
     this.revealed = false;
     this.reviewedThisPass.clear();
@@ -62,9 +100,27 @@ export class StudySession {
     this.render();
   }
 
+  /** Unlock extra new words for today and start a new-words session. */
+  async learnMore(count: number): Promise<void> {
+    if (count <= 0) {
+      return;
+    }
+    const remaining = this.store.countRemainingUnseen();
+    if (remaining <= 0) {
+      vscode.window.showInformationMessage('No more new dictionary words left to learn.');
+      return;
+    }
+    const n = Math.min(count, remaining);
+    await this.start({ unlockExtra: n, newOnly: true });
+    vscode.window.setStatusBarMessage(
+      `Sakana: unlocked ${n} more new word${n === 1 ? '' : 's'} for today`,
+      3000
+    );
+  }
+
   async toggleView(): Promise<void> {
     if (this.queue.length === 0) {
-      await this.start(this.mode === 'terminal' ? 'ui' : 'terminal');
+      await this.start({ preferredMode: this.mode === 'terminal' ? 'ui' : 'terminal' });
       return;
     }
     this.mode = this.mode === 'terminal' ? 'ui' : 'terminal';
@@ -116,7 +172,6 @@ export class StudySession {
     if (this.queue.length === 0) {
       return;
     }
-    // Going back does not auto-schedule
     this.index = (this.index - 1 + this.queue.length) % this.queue.length;
     this.revealed = false;
     await this.store.setSessionIndex(this.index);
@@ -136,7 +191,6 @@ export class StudySession {
     if (this.reviewedThisPass.has(card.entry.id)) {
       return;
     }
-    // Auto-schedule as Good when leaving a revealed card
     await this.store.recordReview(card.entry.id);
     this.reviewedThisPass.add(card.entry.id);
   }

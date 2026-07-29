@@ -13,7 +13,7 @@ VS Code extension that helps language learners memorize vocabulary — **stealth
 4. **Vocabulary cards** — French word, IPA pronunciation, English meaning, sample sentence + English translation
 5. **Previous / Next** navigation (global shortcuts + terminal keys)
 6. **SM-2 spaced repetition** with **auto-scheduling** (revealing then going next = “Good”; optional “Forgot”)
-7. **Daily progress** tracking
+7. **Daily progress** — list today’s new words, and unlock more anytime
 8. **Vocabulary book** — look up words in the built-in dictionary and add them
 
 ## Learning order
@@ -50,7 +50,8 @@ Core learner words use hand-written example sentences. Remaining entries keep go
 | `Ctrl+Alt+A` | `Cmd+Alt+A` | Add current word to vocabulary book |
 | `Ctrl+Alt+B` | `Cmd+Alt+B` | Open vocabulary book |
 | `Ctrl+Alt+L` | `Cmd+Alt+L` | Lookup word in dictionary |
-| `Ctrl+Alt+D` | `Cmd+Alt+D` | Show daily progress |
+| `Ctrl+Alt+D` | `Cmd+Alt+D` | **Today’s words** list + Learn more |
+| `Ctrl+Alt+M` | `Cmd+Alt+M` | Learn more new words (beyond daily goal) |
 
 ### Inside the terminal
 
@@ -69,8 +70,16 @@ Core learner words use hand-written example sentences. Remaining entries keep go
 - Algorithm: **SM-2** (Anki-style forgetting curve)
 - **Auto-schedule:** after you reveal a card, pressing **Next** records a “Good” review and sets the next due date
 - **Forgot** (`Ctrl+Alt+F` / `f`): resets the streak and schedules a sooner review
-- New words per day are limited (`sakanaVocab.dailyNewLimit`, default **20**)
-- Due reviews are shown before new words; vocabulary-book words are prioritized
+- Default new words per day: `sakanaVocab.dailyNewLimit` (default **20**) — this is a **goal**, not a hard stop
+- Want more? **Ctrl+Alt+M**, Today’s list → **Learn 10 more**, terminal `more` / `more 15`, or UI **Learn 10 more**
+- **Ctrl+Alt+D** opens today’s learned-word list
+
+## Today’s words
+
+`Ctrl+Alt+D` (or status-bar **Sakana**, or terminal `today`) shows:
+
+1. Actions: Learn 10 more / Learn more… / Continue studying  
+2. Every **new** word you introduced today (click one to inspect / add to book)
 
 ## Local data
 
@@ -99,7 +108,7 @@ Search for **Sakana Vocabulary** in the Command Palette (`Ctrl+Shift+P` / `Cmd+S
 
 ## Settings
 
-- `sakanaVocab.dailyNewLimit` — max new words introduced per day (default 20)
+- `sakanaVocab.dailyNewLimit` — default daily new-word goal (default 20); unlock more anytime
 - `sakanaVocab.defaultView` — `terminal` (default) or `ui`
 
 ## Rebuild dictionary (optional)
