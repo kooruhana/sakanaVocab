@@ -16,7 +16,15 @@ VS Code extension that helps language learners memorize vocabulary — **stealth
 7. **Daily progress** tracking
 8. **Vocabulary book** — look up words in the built-in dictionary and add them
 
-## Built-in French dictionary
+## Learning order
+
+New words follow a **gentle → harder** path:
+
+1. **Starter** (~145 everyday survival words): greetings → people → places/food → core verbs → simple adjectives/numbers → essential glue words  
+2. **CEFR A1 → C2** using [FLELex](https://cental.uclouvain.be/cefrlex/flelex/) (textbook-graded frequencies)  
+3. Within each level: more common / concrete words first; clitics and proper names later  
+
+The study queue introduces new words in this order (after due reviews). Each card shows its level (`starter`, `A1`, …).
 
 ~12,000 entries. **Meanings** come from a bilingual FR→EN dictionary (not raw multi-sense Wiktionary dumps):
 

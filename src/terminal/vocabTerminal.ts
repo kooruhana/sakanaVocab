@@ -71,7 +71,8 @@ export class VocabTerminal {
 
     const flag = card.isNew ? 'NEW' : card.isDue ? 'DUE' : 'REVIEW';
     const book = card.inBook ? ' ★' : '';
-    this.println(`[${flag}]${book}`);
+    const level = card.entry.level ? ` ${card.entry.level}` : '';
+    this.println(`[${flag}]${level}${book}`);
     this.println('');
     this.println(`  ${card.entry.word}`);
     this.println(`  ${card.entry.ipa}`);

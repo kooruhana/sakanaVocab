@@ -167,13 +167,16 @@ export class ProgressStore {
       }
     }
 
-    // Then rest of dictionary
+    // Then rest of dictionary (already sorted easiest → hardest)
     for (const entry of this.dictionary) {
       if (bookIds.has(entry.id)) {
         continue;
       }
       consider(entry);
     }
+
+    // Keep new words in pedagogical order (starter → A1 → … → C2)
+    newOnes.sort((a, b) => (a.order ?? 1e9) - (b.order ?? 1e9));
 
     const todayStats = this.getDailyStats(today);
     const remainingNew = Math.max(0, dailyNewLimit - todayStats.newWords);

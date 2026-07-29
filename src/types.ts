@@ -5,6 +5,8 @@ export interface SampleSentence {
   translation: string;
 }
 
+export type CefrLevel = 'starter' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2' | 'ungraded';
+
 export interface VocabEntry {
   id: string;
   language: LanguageCode;
@@ -14,6 +16,10 @@ export interface VocabEntry {
   pos?: string;
   sentences: SampleSentence[];
   tags?: string[];
+  /** Learner path level: starter (gentle everyday) then CEFR A1–C2 */
+  level?: CefrLevel;
+  /** Global teaching order (1 = easiest / earliest) */
+  order?: number;
 }
 
 export interface Sm2State {

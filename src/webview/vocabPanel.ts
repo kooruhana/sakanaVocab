@@ -249,7 +249,8 @@ export class VocabWebviewPanel {
       } else {
         const flag = card.isNew ? 'New' : card.isDue ? 'Due' : 'Review';
         const book = card.inBook ? ' · in book' : '';
-        let body = '<div class="flag">' + flag + book + '</div>';
+        const level = card.entry.level ? ' · ' + card.entry.level : '';
+        let body = '<div class="flag">' + flag + level + book + '</div>';
         body += '<div class="word">' + escapeHtml(card.entry.word) + '</div>';
         body += '<div class="ipa">' + escapeHtml(card.entry.ipa) + '</div>';
         if (card.entry.pos) body += '<div class="pos">' + escapeHtml(card.entry.pos) + '</div>';
