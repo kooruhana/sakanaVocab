@@ -2,7 +2,7 @@
   "name": "sakana-vocabulary",
   "displayName": "Sakana Vocabulary",
   "description": "Terminal-stealth French vocabulary trainer with spaced repetition for language learners.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "sakana",
   "engines": {
     "vscode": "^1.85.0"
@@ -150,7 +150,7 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "build:dict": "python3 scripts/build_from_kaikki.py",
+    "build:dict": "python3 scripts/rebuild_trusted_dict.py",
     "test:sm2": "npm run compile && node -e \"require('./out/srs/sm2'); const {reviewSm2,createInitialSm2,AUTO_GOOD,FORGOT}=require('./out/srs/sm2'); let s=createInitialSm2('2026-07-29'); s=reviewSm2(s,AUTO_GOOD,'2026-07-29'); if(s.interval!==1) process.exit(1); console.log('ok');\"",
     "package": "vsce package",
     "lint": "tsc -p ./ --noEmit"

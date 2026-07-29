@@ -18,15 +18,16 @@ VS Code extension that helps language learners memorize vocabulary — **stealth
 
 ## Built-in French dictionary
 
-~8,000 entries built from:
+~12,000 entries. **Meanings** come from a bilingual FR→EN dictionary (not raw multi-sense Wiktionary dumps):
 
 | Source | Use |
 |--------|-----|
-| [kaikki.org / Wiktextract](https://kaikki.org/dictionary/French/) (enwiktionary, CC BY-SA 4.0) | Meanings, examples, IPA |
-| [open-dict-data/ipa-dict](https://github.com/open-dict-data/ipa-dict) (MIT) | IPA fallback |
+| [Matthias Buchmeier FR→EN](https://github.com/open-dsl-dict/wiktionary-dict) (CC BY-SA 3.0 / GFDL) | **Primary English meanings** (POS-tagged glosses) |
+| [open-dict-data/ipa-dict](https://github.com/open-dict-data/ipa-dict) (MIT) | IPA pronunciation |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) | Frequency ordering |
+| [kaikki.org / Wiktextract](https://kaikki.org/dictionary/French/) (CC BY-SA 4.0) | Sample sentences when they match the chosen gloss |
 
-Core learner words were spot-checked against Wiktionary. Entries tagged `synthetic-example` use a short pedagogical frame when Wiktionary had no bilingual example; gloss and IPA still come from dictionary sources.
+Ultra-common homographs (`pas`, `sur`, `est`, `la`, …) use a curated verified table so learner meanings win over rare senses (e.g. `pas` = *not*, not *step*). Inflection-only senses are skipped unless curated.
 
 ## Shortcuts
 
@@ -95,11 +96,9 @@ Search for **Sakana Vocabulary** in the Command Palette (`Ctrl+Shift+P` / `Cmd+S
 
 ## Rebuild dictionary (optional)
 
-Requires the kaikki French JSONL at `/tmp/kaikki/french.jsonl` and IPA/frequency lists under `/tmp`:
-
 ```bash
-python3 scripts/build_from_kaikki.py
-python3 scripts/curate_core.py   # optional; hits Wiktionary API
+# prerequisites under /tmp: fr_ipa.txt, fr_freq.txt, fren-dict/fr-en.txt, kaikki/french.jsonl
+python3 scripts/rebuild_trusted_dict.py
 ```
 
 ## License
