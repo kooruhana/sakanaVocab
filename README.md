@@ -35,7 +35,7 @@ The study queue introduces new words in this order (after due reviews). Each car
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) | Frequency ordering |
 | [kaikki.org / Wiktextract](https://kaikki.org/dictionary/French/) (CC BY-SA 4.0) | Sample sentences when they match the chosen gloss |
 
-Ultra-common homographs (`pas`, `sur`, `est`, `la`, …) use a curated verified table so learner meanings win over rare senses (e.g. `pas` = *not*, not *step*). Inflection-only senses are skipped unless curated.
+Core learner words use hand-written example sentences. Remaining entries keep good bilingual examples when available; otherwise they get **meaning-aware crafted sentences** (not “Le mot X veut dire …” templates).
 
 ## Shortcuts
 
@@ -106,7 +106,9 @@ Search for **Sakana Vocabulary** in the Command Palette (`Ctrl+Shift+P` / `Cmd+S
 
 ```bash
 # prerequisites under /tmp: fr_ipa.txt, fr_freq.txt, fren-dict/fr-en.txt, kaikki/french.jsonl
+# CEFR levels: /tmp/flelex/FleLex_TT_Beacco.tsv
 python3 scripts/rebuild_trusted_dict.py
+python3 scripts/reorder_learning_path.py
 ```
 
 ## License

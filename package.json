@@ -2,7 +2,7 @@
   "name": "sakana-vocabulary",
   "displayName": "Sakana Vocabulary",
   "description": "Terminal-stealth French vocabulary trainer with spaced repetition for language learners.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "sakana",
   "engines": {
     "vscode": "^1.85.0"
