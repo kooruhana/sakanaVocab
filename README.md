@@ -1,2 +1,107 @@
-# sakanaVocab
-VSCode extension to help language learners improve their vocabulary
+# Sakana Vocabulary
+
+VS Code extension that helps language learners memorize vocabulary — **stealthily in a real terminal**, or in a proper webview UI.
+
+**Official name:** Sakana Vocabulary  
+**MVP language:** French (English & Japanese planned later)
+
+## Features
+
+1. **Terminal study mode** — real VS Code terminal (`Pseudoterminal`) that looks like a normal shell session
+2. **Webview UI** — richer card view with the same study flow
+3. **Toggle** between terminal and UI with one shortcut
+4. **Vocabulary cards** — French word, IPA pronunciation, English meaning, sample sentence + English translation
+5. **Previous / Next** navigation (global shortcuts + terminal keys)
+6. **SM-2 spaced repetition** with **auto-scheduling** (revealing then going next = “Good”; optional “Forgot”)
+7. **Daily progress** tracking
+8. **Vocabulary book** — look up words in the built-in dictionary and add them
+
+## Built-in French dictionary
+
+~8,000 entries built from:
+
+| Source | Use |
+|--------|-----|
+| [kaikki.org / Wiktextract](https://kaikki.org/dictionary/French/) (enwiktionary, CC BY-SA 4.0) | Meanings, examples, IPA |
+| [open-dict-data/ipa-dict](https://github.com/open-dict-data/ipa-dict) (MIT) | IPA fallback |
+| [FrequencyWords](https://github.com/hermitdave/FrequencyWords) | Frequency ordering |
+
+Core learner words were spot-checked against Wiktionary. Entries tagged `synthetic-example` use a short pedagogical frame when Wiktionary had no bilingual example; gloss and IPA still come from dictionary sources.
+
+## Shortcuts
+
+| Shortcut (Windows/Linux) | macOS | Action |
+|--------------------------|-------|--------|
+| `Ctrl+Alt+S` | `Cmd+Alt+S` | Start study session |
+| `Ctrl+Alt+T` | `Cmd+Alt+T` | Toggle terminal ↔ UI |
+| `Ctrl+Alt+N` | `Cmd+Alt+N` | Next word |
+| `Ctrl+Alt+P` | `Cmd+Alt+P` | Previous word |
+| `Ctrl+Alt+R` | `Cmd+Alt+R` | Reveal meaning / examples |
+| `Ctrl+Alt+F` | `Cmd+Alt+F` | Mark as forgotten (review sooner) |
+| `Ctrl+Alt+A` | `Cmd+Alt+A` | Add current word to vocabulary book |
+| `Ctrl+Alt+B` | `Cmd+Alt+B` | Open vocabulary book |
+| `Ctrl+Alt+L` | `Cmd+Alt+L` | Lookup word in dictionary |
+| `Ctrl+Alt+D` | `Cmd+Alt+D` | Show daily progress |
+
+### Inside the terminal
+
+| Key | Action |
+|-----|--------|
+| `Space` / `r` | Reveal |
+| `n` | Next (auto-schedules if revealed) |
+| `p` | Previous |
+| `f` | Forgot |
+| `a` | Add to book |
+| `t` | Toggle UI |
+| `help` | Help |
+
+## How scheduling works
+
+- Algorithm: **SM-2** (Anki-style forgetting curve)
+- **Auto-schedule:** after you reveal a card, pressing **Next** records a “Good” review and sets the next due date
+- **Forgot** (`Ctrl+Alt+F` / `f`): resets the streak and schedules a sooner review
+- New words per day are limited (`sakanaVocab.dailyNewLimit`, default **20**)
+- Due reviews are shown before new words; vocabulary-book words are prioritized
+
+## Local data
+
+Progress and your vocabulary book are stored **locally** on your machine in the extension’s global storage (follows your VS Code user profile, not a single workspace folder):
+
+- learned/review state (SM-2)
+- vocabulary book word IDs
+- daily stats
+
+## Install (development)
+
+```bash
+npm install
+npm run compile
+```
+
+Then in VS Code: **Run → Start Debugging** (or `F5`) with this folder open, or pack with:
+
+```bash
+npx vsce package
+```
+
+## Commands palette
+
+Search for **Sakana Vocabulary** in the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
+
+## Settings
+
+- `sakanaVocab.dailyNewLimit` — max new words introduced per day (default 20)
+- `sakanaVocab.defaultView` — `terminal` (default) or `ui`
+
+## Rebuild dictionary (optional)
+
+Requires the kaikki French JSONL at `/tmp/kaikki/french.jsonl` and IPA/frequency lists under `/tmp`:
+
+```bash
+python3 scripts/build_from_kaikki.py
+python3 scripts/curate_core.py   # optional; hits Wiktionary API
+```
+
+## License
+
+See [LICENSE](LICENSE). Dictionary content remains under the licenses of its upstream sources (notably CC BY-SA for Wiktionary-derived glosses/examples).
