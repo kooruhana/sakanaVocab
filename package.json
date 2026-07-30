@@ -4,6 +4,7 @@
   "description": "Terminal-stealth French vocabulary trainer with spaced repetition for language learners.",
   "version": "0.1.4",
   "publisher": "sakana",
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
