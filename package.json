@@ -1,0 +1,179 @@
+{
+  "name": "sakana-vocabulary",
+  "displayName": "Sakana Vocabulary",
+  "description": "Terminal-stealth French vocabulary trainer with spaced repetition for language learners.",
+  "version": "0.1.4",
+  "publisher": "sakana",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "keywords": [
+    "french",
+    "vocabulary",
+    "language learning",
+    "flashcards",
+    "spaced repetition"
+  ],
+  "activationEvents": [
+    "onCommand:sakanaVocab.start",
+    "onCommand:sakanaVocab.toggleView",
+    "onCommand:sakanaVocab.next",
+    "onCommand:sakanaVocab.prev",
+    "onCommand:sakanaVocab.reveal",
+    "onCommand:sakanaVocab.openBook",
+    "onCommand:sakanaVocab.addToBook",
+    "onCommand:sakanaVocab.dailyProgress",
+    "onCommand:sakanaVocab.learnMore"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sakanaVocab.start",
+        "title": "Sakana Vocabulary: Start Study Session"
+      },
+      {
+        "command": "sakanaVocab.toggleView",
+        "title": "Sakana Vocabulary: Toggle Terminal / UI"
+      },
+      {
+        "command": "sakanaVocab.next",
+        "title": "Sakana Vocabulary: Next Word"
+      },
+      {
+        "command": "sakanaVocab.prev",
+        "title": "Sakana Vocabulary: Previous Word"
+      },
+      {
+        "command": "sakanaVocab.reveal",
+        "title": "Sakana Vocabulary: Reveal Answer"
+      },
+      {
+        "command": "sakanaVocab.markForgot",
+        "title": "Sakana Vocabulary: Mark as Forgotten"
+      },
+      {
+        "command": "sakanaVocab.openBook",
+        "title": "Sakana Vocabulary: Open Vocabulary Book"
+      },
+      {
+        "command": "sakanaVocab.addToBook",
+        "title": "Sakana Vocabulary: Add Current Word to Book"
+      },
+      {
+        "command": "sakanaVocab.dailyProgress",
+        "title": "Sakana Vocabulary: Today’s Words / Progress"
+      },
+      {
+        "command": "sakanaVocab.learnMore",
+        "title": "Sakana Vocabulary: Learn More New Words"
+      },
+      {
+        "command": "sakanaVocab.lookup",
+        "title": "Sakana Vocabulary: Lookup Word"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "sakanaVocab.start",
+        "key": "ctrl+alt+s",
+        "mac": "cmd+alt+s"
+      },
+      {
+        "command": "sakanaVocab.toggleView",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t"
+      },
+      {
+        "command": "sakanaVocab.next",
+        "key": "ctrl+alt+n",
+        "mac": "cmd+alt+n"
+      },
+      {
+        "command": "sakanaVocab.prev",
+        "key": "ctrl+alt+p",
+        "mac": "cmd+alt+p"
+      },
+      {
+        "command": "sakanaVocab.reveal",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r"
+      },
+      {
+        "command": "sakanaVocab.markForgot",
+        "key": "ctrl+alt+f",
+        "mac": "cmd+alt+f"
+      },
+      {
+        "command": "sakanaVocab.openBook",
+        "key": "ctrl+alt+b",
+        "mac": "cmd+alt+b"
+      },
+      {
+        "command": "sakanaVocab.addToBook",
+        "key": "ctrl+alt+a",
+        "mac": "cmd+alt+a"
+      },
+      {
+        "command": "sakanaVocab.dailyProgress",
+        "key": "ctrl+alt+d",
+        "mac": "cmd+alt+d"
+      },
+      {
+        "command": "sakanaVocab.learnMore",
+        "key": "ctrl+alt+m",
+        "mac": "cmd+alt+m"
+      },
+      {
+        "command": "sakanaVocab.lookup",
+        "key": "ctrl+alt+l",
+        "mac": "cmd+alt+l"
+      }
+    ],
+    "configuration": {
+      "title": "Sakana Vocabulary",
+      "properties": {
+        "sakanaVocab.dailyNewLimit": {
+          "type": "number",
+          "default": 20,
+          "minimum": 1,
+          "maximum": 200,
+          "description": "Default daily goal for new words. You can still unlock more anytime via “Learn more” (Ctrl+Alt+M)."
+        },
+        "sakanaVocab.defaultView": {
+          "type": "string",
+          "enum": [
+            "terminal",
+            "ui"
+          ],
+          "default": "terminal",
+          "description": "View to open when starting a study session."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "build:dict": "python3 scripts/rebuild_trusted_dict.py",
+    "test:sm2": "npm run compile && node -e \"require('./out/srs/sm2'); const {reviewSm2,createInitialSm2,AUTO_GOOD,FORGOT}=require('./out/srs/sm2'); let s=createInitialSm2('2026-07-29'); s=reviewSm2(s,AUTO_GOOD,'2026-07-29'); if(s.interval!==1) process.exit(1); console.log('ok');\"",
+    "package": "vsce package",
+    "lint": "tsc -p ./ --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.32.0",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kooruhana/sakanaVocab"
+  }
+}

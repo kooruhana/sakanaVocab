@@ -1,0 +1,2449 @@
+[
+  {
+    "id": "fr:bonjour",
+    "language": "fr",
+    "word": "bonjour",
+    "ipa": "/bɔ̃.ʒuʁ/",
+    "meaning": "greetings; hello (general salutation)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Tu passeras le bonjour à ta mère !",
+        "translation": "Tell your mother I said hi."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:merci",
+    "language": "fr",
+    "word": "merci",
+    "ipa": "/mɛʁ.si/",
+    "meaning": "thank you",
+    "pos": "interjection",
+    "sentences": [
+      {
+        "text": "Merci pour ton aide.",
+        "translation": "Thank you for your help."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:oui",
+    "language": "fr",
+    "word": "oui",
+    "ipa": "/wi/",
+    "meaning": "yes",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "Le mot « oui » veut dire « yes ».",
+        "translation": "The word \"oui\" means \"yes\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:non",
+    "language": "fr",
+    "word": "non",
+    "ipa": "/nɔ̃/",
+    "meaning": "no",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "Le mot « non » veut dire « no ».",
+        "translation": "The word \"non\" means \"no\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:homme",
+    "language": "fr",
+    "word": "homme",
+    "ipa": "/ɔm/",
+    "meaning": "man (adult male human)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "C'est un homme bien, le meilleur d'entre nous.",
+        "translation": "He's a good man, the best of us."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:femme",
+    "language": "fr",
+    "word": "femme",
+    "ipa": "/fam/",
+    "meaning": "woman",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Ta grandeur morale, image de l’infini, est immense comme la réflexion du philosophe, comme l’amour de la femme, comme la beauté divine de l’oiseau, comme les méditations du poète. Tu es plus beau que la nuit. Réponds-moi, océan, veux-tu être mon frère ?",
+        "translation": "Your moral grandeur, image of infinity, is as vast as the philosopher's reflections, as woman's love, as the divine beauty of the bird, as the meditations of the poet. You are more beautiful than the night. Answer me, ocean, will you be my brother ?"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:garçon",
+    "language": "fr",
+    "word": "garçon",
+    "ipa": "/ɡaʁ.sɔ̃/",
+    "meaning": "boy",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Il a deux garçons et une fille.",
+        "translation": "He has two boys and a girl."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:fille",
+    "language": "fr",
+    "word": "fille",
+    "ipa": "/fij/",
+    "meaning": "girl",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Toutes les filles n'aiment pas jouer avec des poupées.",
+        "translation": "Not all girls like playing with dolls."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:enfant",
+    "language": "fr",
+    "word": "enfant",
+    "ipa": "/ɑ̃.fɑ̃/",
+    "meaning": "child (someone who is not yet an adult)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "enfant de Paris",
+        "translation": "Paris native"
+      },
+      {
+        "text": "enfant des États-Unis",
+        "translation": "native of the United States"
+      },
+      {
+        "text": "enfant du pays",
+        "translation": "native of the country"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:ami",
+    "language": "fr",
+    "word": "ami",
+    "ipa": "/a.mi/",
+    "meaning": "friend (one who is affectionately attached to another)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Nous devons toujours être aux côtés de nos parents et de nos amis.",
+        "translation": "We must always stand by our family and our friends."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:amie",
+    "language": "fr",
+    "word": "amie",
+    "ipa": "/a.mi/",
+    "meaning": "(female) friend",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « amie » veut dire « (female) friend ».",
+        "translation": "The word \"amie\" means \"(female) friend\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:maison",
+    "language": "fr",
+    "word": "maison",
+    "ipa": "/mɛ.zɔ̃/",
+    "meaning": "house",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "une engueulade maison",
+        "translation": "a hell of a telling off"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:appartement",
+    "language": "fr",
+    "word": "appartement",
+    "ipa": "/a.paʁ.tə.mɑ̃/",
+    "meaning": "apartment, flat",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « appartement » veut dire « apartment ».",
+        "translation": "The word \"appartement\" means \"apartment\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:rue",
+    "language": "fr",
+    "word": "rue",
+    "ipa": "/ʁy/",
+    "meaning": "street, road",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « rue » veut dire « street ».",
+        "translation": "The word \"rue\" means \"street\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:ville",
+    "language": "fr",
+    "word": "ville",
+    "ipa": "/vil/",
+    "meaning": "town, city",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « ville » veut dire « town ».",
+        "translation": "The word \"ville\" means \"town\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:pays",
+    "language": "fr",
+    "word": "pays",
+    "ipa": "/pɛ.i/",
+    "meaning": "land; region; home ground; homeland; home country; country; nation",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « pays » veut dire « land ».",
+        "translation": "The word \"pays\" means \"land\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:monde",
+    "language": "fr",
+    "word": "monde",
+    "ipa": "/mɔ̃d/",
+    "meaning": "world",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "C'est la plus belle fille du monde.",
+        "translation": "She is the most beautiful girl in the world."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:eau",
+    "language": "fr",
+    "word": "eau",
+    "ipa": "/o/",
+    "meaning": "water, a liquid that is transparent, colorless, odorless, and tasteless in its pure form, the primary constituent of lakes, rivers, seas, and oceans",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Il buvait un verre d’eau fraîche.",
+        "translation": "He drank a cool glass of water."
+      },
+      {
+        "text": "L’eau de mer et l’eau de rivière n’ont pas la même teneur en sel et n’abritent donc pas les mêmes poissons.",
+        "translation": "Sea water and river water do not have the same salt content and thus do not harbor the same fish."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:pain",
+    "language": "fr",
+    "word": "pain",
+    "ipa": "/pɛ̃/",
+    "meaning": "bread",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "1830 Juvénal, Les Satires, translated into French verse by Barré de Jallais\nSa nudité déplaît, sa détresse importune, / Et tous les jours, hélas ! à tout le monde en vain / Il demande une chambre, un habit et du pain.",
+        "translation": "His nudity embarrasses, his distress importunes, / And every day, alas! from everyone in vain / He asks for a bedroom, clothes and food."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:fromage",
+    "language": "fr",
+    "word": "fromage",
+    "ipa": "/fʁɔ.maʒ/",
+    "meaning": "cheese",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "fromage râpé",
+        "translation": "grated cheese"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:vin",
+    "language": "fr",
+    "word": "vin",
+    "ipa": "/vɛ̃/",
+    "meaning": "wine",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « vin » veut dire « wine ».",
+        "translation": "The word \"vin\" means \"wine\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:lait",
+    "language": "fr",
+    "word": "lait",
+    "ipa": "/lɛ/",
+    "meaning": "milk",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « lait » veut dire « milk ».",
+        "translation": "The word \"lait\" means \"milk\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:café",
+    "language": "fr",
+    "word": "café",
+    "ipa": "/ka.fe/",
+    "meaning": "coffee",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « café » veut dire « coffee ».",
+        "translation": "The word \"café\" means \"coffee\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:thé",
+    "language": "fr",
+    "word": "thé",
+    "ipa": "/te/",
+    "meaning": "tea (especially made from leaves of the tea plant)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « thé » veut dire « tea (especially made from leaves of the tea plant) ».",
+        "translation": "The word \"thé\" means \"tea (especially made from leaves of the tea plant)\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:bière",
+    "language": "fr",
+    "word": "bière",
+    "ipa": "/bjɛʁ/",
+    "meaning": "beer",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "La mise en bière.",
+        "translation": "The action of putting a corpse in a coffin."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:viande",
+    "language": "fr",
+    "word": "viande",
+    "ipa": "/vjɑ̃d/",
+    "meaning": "meat",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "À voir les enfers dont le monde est peuplé, que voulez-vous que je pense de votre joli enfer, vous qui ne reposez que sur des étoffes aussi douces que votre peau, qui ne mangez que de la viande cuite, et pour qui un domestique habile prend soin de découper les morceaux ?",
+        "translation": "Seeing the hells with which the world abounds, what do you expect me to think of your pretty little hell, you who lie on stuffs as soft as your own skin, who eat only cooked meat carefully cut for you by a skilled servant?"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:poisson",
+    "language": "fr",
+    "word": "poisson",
+    "ipa": "/pwa.sɔ̃/",
+    "meaning": "fish (marine animal)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Poisson sans boisson est poison.",
+        "translation": "Fish without drink is poison."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:fruit",
+    "language": "fr",
+    "word": "fruit",
+    "ipa": "/fʁɥi/",
+    "meaning": "fruit",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « fruit » veut dire « fruit ».",
+        "translation": "The word \"fruit\" means \"fruit\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:légume",
+    "language": "fr",
+    "word": "légume",
+    "ipa": "/le.ɡym/",
+    "meaning": "vegetable",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Manger des légumes est très bon pour la santé.",
+        "translation": "Eating vegetables is very good for one's health."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:pomme",
+    "language": "fr",
+    "word": "pomme",
+    "ipa": "/pɔm/",
+    "meaning": "apple (fruit)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "manger une pomme",
+        "translation": "eat an apple"
+      },
+      {
+        "text": "une tarte aux pommes",
+        "translation": "an apple pie"
+      },
+      {
+        "text": "une gosette aux pommes, un chausson aux pommes",
+        "translation": "an apple turnover"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:riz",
+    "language": "fr",
+    "word": "riz",
+    "ipa": "/ʁi/",
+    "meaning": "rice",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « riz » veut dire « rice ».",
+        "translation": "The word \"riz\" means \"rice\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:sucre",
+    "language": "fr",
+    "word": "sucre",
+    "ipa": "/sykʁ/",
+    "meaning": "sugar",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « sucre » veut dire « sugar ».",
+        "translation": "The word \"sucre\" means \"sugar\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:sel",
+    "language": "fr",
+    "word": "sel",
+    "ipa": "/sɛl/",
+    "meaning": "table salt, i.e. sodium chloride (NaCl)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « sel » veut dire « table salt ».",
+        "translation": "The word \"sel\" means \"table salt\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:chien",
+    "language": "fr",
+    "word": "chien",
+    "ipa": "/ʃjɛ̃/",
+    "meaning": "dog",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « chien » veut dire « dog ».",
+        "translation": "The word \"chien\" means \"dog\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:chat",
+    "language": "fr",
+    "word": "chat",
+    "ipa": "/ʃa/",
+    "meaning": "cat (feline)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Soudain, d’un seul élan, cela se précipita sur lui, avec un miaulement plaintif et la queue droite. C’était un jeune chat, menu et décharné, qui frottait sa tête contre les jambes de Bert, en ronronnant.",
+        "translation": "It advanced suddenly upon him with a rush, with a little meawling cry and tail erect. It rubbed its head against him and purred. It was a tiny, skinny little kitten."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:oiseau",
+    "language": "fr",
+    "word": "oiseau",
+    "ipa": "/wa.zo/",
+    "meaning": "bird",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « oiseau » veut dire « bird ».",
+        "translation": "The word \"oiseau\" means \"bird\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:cheval",
+    "language": "fr",
+    "word": "cheval",
+    "ipa": "/ʃə.val/",
+    "meaning": "horse",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « cheval » veut dire « horse ».",
+        "translation": "The word \"cheval\" means \"horse\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:livre",
+    "language": "fr",
+    "word": "livre",
+    "ipa": "/livʁ/",
+    "meaning": "book",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « livre » veut dire « book ».",
+        "translation": "The word \"livre\" means \"book\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:école",
+    "language": "fr",
+    "word": "école",
+    "ipa": "/e.kɔl/",
+    "meaning": "school",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « école » veut dire « school ».",
+        "translation": "The word \"école\" means \"school\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:travail",
+    "language": "fr",
+    "word": "travail",
+    "ipa": "/tʁa.vaj/",
+    "meaning": "work; labor",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "un travail bien fait",
+        "translation": "work done well, a job well done"
+      },
+      {
+        "text": "On se met au travail.",
+        "translation": "Let's get to work."
+      },
+      {
+        "text": "Remettez-vous au travail.",
+        "translation": "Do get to work."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:bureau",
+    "language": "fr",
+    "word": "bureau",
+    "ipa": "/by.ʁo/",
+    "meaning": "desk",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « bureau » veut dire « desk ».",
+        "translation": "The word \"bureau\" means \"desk\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:magasin",
+    "language": "fr",
+    "word": "magasin",
+    "ipa": "/ma.ɡa.zɛ̃/",
+    "meaning": "shop, store",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "comme un éléphant dans un magasin de porcelaine",
+        "translation": "like a bull in a china shop"
+      },
+      {
+        "text": "faire les magasins",
+        "translation": "to go shopping"
+      },
+      {
+        "text": "grand magasin",
+        "translation": "department store"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:restaurant",
+    "language": "fr",
+    "word": "restaurant",
+    "ipa": "/ʁɛs.tɔ.ʁɑ̃/",
+    "meaning": "restaurant",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « restaurant » veut dire « restaurant ».",
+        "translation": "The word \"restaurant\" means \"restaurant\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:hôtel",
+    "language": "fr",
+    "word": "hôtel",
+    "ipa": "/o.tɛl/",
+    "meaning": "mansion, town house, hotel (sense 1)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le palais épiscopal était un vaste et bel hôtel bâti en pierre au commencement du siècle dernier par monseigneur Henri Puget […].",
+        "translation": "The Bishops' Palace was a vast and beautiful building built of stone at the beginning of the last century by M. Henri Puget."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:voiture",
+    "language": "fr",
+    "word": "voiture",
+    "ipa": "/vwa.tyʁ/",
+    "meaning": "car (wheeled vehicle usually pulled by a horse)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "voiture de fonction, voiture de société",
+        "translation": "company car, take-home vehicle"
+      },
+      {
+        "text": "voiture de sport",
+        "translation": "sports car"
+      },
+      {
+        "text": "voiture piégée",
+        "translation": "car bomb"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:train",
+    "language": "fr",
+    "word": "train",
+    "ipa": "/tʁɛ̃/",
+    "meaning": "train (rail mounted vehicle)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "billet de train",
+        "translation": "train ticket"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:bus",
+    "language": "fr",
+    "word": "bus",
+    "ipa": "/bys/",
+    "meaning": "bus",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « bus » veut dire « bus ».",
+        "translation": "The word \"bus\" means \"bus\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:avion",
+    "language": "fr",
+    "word": "avion",
+    "ipa": "/a.vjɔ̃/",
+    "meaning": "aeroplane",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Regarde comme cet avion vole vite !",
+        "translation": "Look how fast this plane flies!"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:vélo",
+    "language": "fr",
+    "word": "vélo",
+    "ipa": "/ve.lo/",
+    "meaning": "bike, bicycle, cycle",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "faire du vélo",
+        "translation": "to go cycling, to go for a bike ride"
+      },
+      {
+        "text": "J'adore le vélo.",
+        "translation": "I love cycling."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:temps",
+    "language": "fr",
+    "word": "temps",
+    "ipa": "/tɑ̃/",
+    "meaning": "time",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "je n'ai pas le temps de faire ça",
+        "translation": "I haven't got (the) time to do that"
+      },
+      {
+        "text": "il faut encore du temps",
+        "translation": "I need more time"
+      },
+      {
+        "text": "Il est temps de commencer.",
+        "translation": "it's time to commence"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:jour",
+    "language": "fr",
+    "word": "jour",
+    "ipa": "/ʒuʁ/",
+    "meaning": "day",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "L’aube du jour commençait à poindre quand don Quichotte sortit de l’hôtellerie, si content, si glorieux, si plein de ravissement de se voir armé chevalier, que sa joie en faisait tressaillir jusqu’aux sangles de son cheval.",
+        "translation": "The dawn of the day was beginning to break when Don Quixote left the inn, so content, so glorious, so full of ravishment of seeing himself armed a knight, that his joy made him tremble all the way to the girths of his horse."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:nuit",
+    "language": "fr",
+    "word": "nuit",
+    "ipa": "/nɥi/",
+    "meaning": "night",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « nuit » veut dire « night ».",
+        "translation": "The word \"nuit\" means \"night\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:matin",
+    "language": "fr",
+    "word": "matin",
+    "ipa": "/ma.tɛ̃/",
+    "meaning": "morning",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « matin » veut dire « morning ».",
+        "translation": "The word \"matin\" means \"morning\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:soir",
+    "language": "fr",
+    "word": "soir",
+    "ipa": "/swaʁ/",
+    "meaning": "evening",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « soir » veut dire « evening ».",
+        "translation": "The word \"soir\" means \"evening\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:année",
+    "language": "fr",
+    "word": "année",
+    "ipa": "/a.ne/",
+    "meaning": "year",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « année » veut dire « year ».",
+        "translation": "The word \"année\" means \"year\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:mois",
+    "language": "fr",
+    "word": "mois",
+    "ipa": "/mwa/",
+    "meaning": "month .mw-parser-output .defdate{font-size:smaller}",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « mois » veut dire « month .mw-parser-output .defdate{font-size:smaller} ».",
+        "translation": "The word \"mois\" means \"month .mw-parser-output .defdate{font-size:smaller}\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:semaine",
+    "language": "fr",
+    "word": "semaine",
+    "ipa": "/sə.mɛn/",
+    "meaning": "week",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Je l'ai vu il n'y a pas plus longtemps qu'une semaine.",
+        "translation": "I saw him no longer than a week ago."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:heure",
+    "language": "fr",
+    "word": "heure",
+    "ipa": "/œʁ/",
+    "meaning": "hour, time",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "C'est l'heure de partir.",
+        "translation": "It's time to leave."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:minute",
+    "language": "fr",
+    "word": "minute",
+    "ipa": "/mi.nyt/",
+    "meaning": "minute (etymology 1, time unit, all same senses)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « minute » veut dire « minute (etymology 1 ».",
+        "translation": "The word \"minute\" means \"minute (etymology 1\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:demain",
+    "language": "fr",
+    "word": "demain",
+    "ipa": "/də.mɛ̃/",
+    "meaning": "tomorrow",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "Demain c'est dimanche.",
+        "translation": "Tomorrow is Sunday."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:hier",
+    "language": "fr",
+    "word": "hier",
+    "ipa": "/jɛʁ/",
+    "meaning": "yesterday",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "[…] car il nous appartient que les choses changent dans le sens du meilleur, d'un meilleur peut-être précaire, et qui pourrait s'énoncer par cette maxime : mieux que rien, mieux qu'hier et mieux qu'aujourd'hui.",
+        "translation": "[…] because it's up to us to change things for the better — a perhaps precarious better — and which could be stated by this maxim: better than nothing, better than yesterday, and better than today."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:maintenant",
+    "language": "fr",
+    "word": "maintenant",
+    "ipa": "/mɛ̃t.nɑ̃/",
+    "meaning": "now, currently",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "Le mot « maintenant » veut dire « now ».",
+        "translation": "The word \"maintenant\" means \"now\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:toujours",
+    "language": "fr",
+    "word": "toujours",
+    "ipa": "/tu.ʒuʁ/",
+    "meaning": "always",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "Il est toujours en retard.",
+        "translation": "He is always late."
+      },
+      {
+        "text": "Parfois, peut-être même souvent, mais certainement pas toujours",
+        "translation": "Sometimes, maybe even often, but certainly not always"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:jamais",
+    "language": "fr",
+    "word": "jamais",
+    "ipa": "/ʒa.mɛ/",
+    "meaning": "never",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "Je ne l’ai jamais vue.",
+        "translation": "I’ve never seen her."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:souvent",
+    "language": "fr",
+    "word": "souvent",
+    "ipa": "/su.vɑ̃/",
+    "meaning": "often",
+    "pos": "adverb",
+    "sentences": [
+      {
+        "text": "le plus souvent",
+        "translation": "most often; more often than not"
+      },
+      {
+        "text": "le plus souvent possible, aussi souvent que possible",
+        "translation": "as often as possible"
+      },
+      {
+        "text": "le moins souvent possible, aussi peu souvent que possible",
+        "translation": "as infrequently as possible"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:petit",
+    "language": "fr",
+    "word": "petit",
+    "ipa": "/pə.ti/",
+    "meaning": "small",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "un petit verre de vin",
+        "translation": "a small glass of wine"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:grand",
+    "language": "fr",
+    "word": "grand",
+    "ipa": "/ɡʁɑ̃/",
+    "meaning": "big",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "un garçon grand et maigre",
+        "translation": "a tall, skinny boy"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:bon",
+    "language": "fr",
+    "word": "bon",
+    "ipa": "/bɔ̃/",
+    "meaning": "good",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Cette meuf est fin bonne !",
+        "translation": "That chick is fine as hell!"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:mauvais",
+    "language": "fr",
+    "word": "mauvais",
+    "ipa": "/mo.vɛ/",
+    "meaning": "bad",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Il a choisi la mauvaise réponse.",
+        "translation": "He chose the wrong response."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:beau",
+    "language": "fr",
+    "word": "beau",
+    "ipa": "/bo/",
+    "meaning": "handsome, fine, attractive",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Il fait beau.",
+        "translation": "It is nice out."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:nouveau",
+    "language": "fr",
+    "word": "nouveau",
+    "ipa": "/nu.vo/",
+    "meaning": "new, novel",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Le mot « nouveau » veut dire « new ».",
+        "translation": "The word \"nouveau\" means \"new\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:vieux",
+    "language": "fr",
+    "word": "vieux",
+    "ipa": "/vjø/",
+    "meaning": "old",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "– Je ne veux pas t'empêcher de travailler, vieux. Je vois que tu es très occupé.",
+        "translation": "I don't want to keep you from working, old chap. I see that you're very busy."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:jeune",
+    "language": "fr",
+    "word": "jeune",
+    "ipa": "/ʒœn/",
+    "meaning": "young",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Il n'aime plus cette personne qu'il aimait il y a dix ans. Je crois bien : elle n'est plus la même ni lui non plus. Il était jeune et elle aussi ; elle est tout autre. Il l'aimerait peut-être encore telle qu'elle était alors.",
+        "translation": "He no longer loves this person whom loved ten years ago. I quite believe it. She is no longer the same, nor is he. He was young and she also ; she is quite different. He would perhaps love her yet, if she were what she was then."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:long",
+    "language": "fr",
+    "word": "long",
+    "ipa": "/lɔ̃/",
+    "meaning": "long",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Le nez de Pinocchio mesure le matin 5 cm de long.",
+        "translation": "Pinocchio's nose measures 5 cm long in the morning."
+      },
+      {
+        "text": "J'aime marcher le long du fleuve.",
+        "translation": "I like walking along the river."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:court",
+    "language": "fr",
+    "word": "court",
+    "ipa": "/kuʁ/",
+    "meaning": "short",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Le mot « court » veut dire « short ».",
+        "translation": "The word \"court\" means \"short\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:haut",
+    "language": "fr",
+    "word": "haut",
+    "ipa": "/o/",
+    "meaning": "high",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "le haut Moyen-Âge",
+        "translation": "the High Middle Ages"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:bas",
+    "language": "fr",
+    "word": "bas",
+    "ipa": "/ba/",
+    "meaning": "low",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Le mot « bas » veut dire « low ».",
+        "translation": "The word \"bas\" means \"low\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:chaud",
+    "language": "fr",
+    "word": "chaud",
+    "ipa": "/ʃo/",
+    "meaning": "warm, hot",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Attention, la poêle est chaude !",
+        "translation": "Be careful; the pan is hot!"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:froid",
+    "language": "fr",
+    "word": "froid",
+    "ipa": "/fʁwa/",
+    "meaning": "cold (temperature)",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Le mot « froid » veut dire « cold (temperature) ».",
+        "translation": "The word \"froid\" means \"cold (temperature)\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:facile",
+    "language": "fr",
+    "word": "facile",
+    "ipa": "/fa.sil/",
+    "meaning": "easy, simple",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Il n'est pas facile de vivre avec le diabète.",
+        "translation": "It is not easy to live with diabetes."
+      },
+      {
+        "text": "Il est facile à comprendre.",
+        "translation": "He is easy to understand."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:difficile",
+    "language": "fr",
+    "word": "difficile",
+    "ipa": "/di.fi.sil/",
+    "meaning": "difficult",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "la critique est aisée mais l’art est difficile",
+        "translation": "criticism comes easy, but art is difficult"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:heureux",
+    "language": "fr",
+    "word": "heureux",
+    "ipa": "/œ.ʁø/",
+    "meaning": "happy",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "faire des heureux",
+        "translation": "to make some people happy"
+      },
+      {
+        "text": "Ça ne va pas faire que des heureux !",
+        "translation": "It won't please everybody! It won't be to everyone's liking!"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:triste",
+    "language": "fr",
+    "word": "triste",
+    "ipa": "/tʁist/",
+    "meaning": "sad",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Le mot « triste » veut dire « sad ».",
+        "translation": "The word \"triste\" means \"sad\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:fatigué",
+    "language": "fr",
+    "word": "fatigué",
+    "ipa": "/fa.ti.ɡe/",
+    "meaning": "past participle of fatiguer",
+    "pos": "participle",
+    "sentences": [
+      {
+        "text": "Le mot « fatigué » veut dire « past participle of fatiguer ».",
+        "translation": "The word \"fatigué\" means \"past participle of fatiguer\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:malade",
+    "language": "fr",
+    "word": "malade",
+    "ipa": "/ma.lad/",
+    "meaning": "ill, unwell, sick",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Elle est si malade qu’elle ne peut pas venir.",
+        "translation": "She is so ill that she cannot come."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:manger",
+    "language": "fr",
+    "word": "manger",
+    "ipa": "/mɑ̃.ʒe/",
+    "meaning": "to eat",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "J'ai mangé de la viande à midi.",
+        "translation": "I ate some meat for lunch."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:boire",
+    "language": "fr",
+    "word": "boire",
+    "ipa": "/bwaʁ/",
+    "meaning": "to drink",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Je rêve de boire à tes mots",
+        "translation": "I dream of drinking to your words"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:parler",
+    "language": "fr",
+    "word": "parler",
+    "ipa": "/paʁ.le/",
+    "meaning": "to speak, talk",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Il a commencé à parler à l’âge de quatre ans.",
+        "translation": "He began to speak at the age of four."
+      },
+      {
+        "text": "Ils ont parlé plusieurs heures avant d’aller se coucher.",
+        "translation": "They spoke several hours before going to sleep."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:faire",
+    "language": "fr",
+    "word": "faire",
+    "ipa": "/fɛʁ/",
+    "meaning": "to do",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "faire la vaisselle",
+        "translation": "to do the washing-up."
+      },
+      {
+        "text": "Qu'est-ce que tu fais ?",
+        "translation": "What are you doing?"
+      },
+      {
+        "text": "Fais pas ça.",
+        "translation": "Don't do that."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:aller",
+    "language": "fr",
+    "word": "aller",
+    "ipa": "/a.le/",
+    "meaning": "to go .mw-parser-output .object-usage-tag{font-style:italic}.mw-parser-output .deprecated{color:var(--wikt-palette-grey-lime-8,olivedrab)}[with à ‘to a location’]",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Je vais au magasin.",
+        "translation": "I'm going to the store."
+      },
+      {
+        "text": "On y va.",
+        "translation": "Let's go."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:venir",
+    "language": "fr",
+    "word": "venir",
+    "ipa": "/və.niʁ/",
+    "meaning": "to come (to move from one place to another that is nearer the speaker)",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Viens vivre avec moi en France.",
+        "translation": "Come live with me in France."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:voir",
+    "language": "fr",
+    "word": "voir",
+    "ipa": "/vwaʁ/",
+    "meaning": "to see (visually)",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Je vois ma mère là-bas.",
+        "translation": "I see my mother over there."
+      },
+      {
+        "text": "On ne voit pas souvent de la neige par ici.",
+        "translation": "One doesn't often see snow around here."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:savoir",
+    "language": "fr",
+    "word": "savoir",
+    "ipa": "/sa.vwaʁ/",
+    "meaning": "to know (something)",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Savais-tu qu'il parle si bien l'anglais?",
+        "translation": "Did you know that he speaks English so well?"
+      },
+      {
+        "text": "Comment savait-il que j'étais là?",
+        "translation": "How did he know that I was there?"
+      },
+      {
+        "text": "Il est difficile de savoir si elle ment.",
+        "translation": "It's difficult to know if she's lying."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:pouvoir",
+    "language": "fr",
+    "word": "pouvoir",
+    "ipa": "/pu.vwaʁ/",
+    "meaning": "can, to be able to",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Je peux venir ce soir.",
+        "translation": "I can come this evening."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:vouloir",
+    "language": "fr",
+    "word": "vouloir",
+    "ipa": "/vu.lwaʁ/",
+    "meaning": "to want, wish, desire",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Je veux voir le soleil.",
+        "translation": "I want to see the sun."
+      },
+      {
+        "text": "Hitler voulait la guerre, mais beaucoup n'en étaient pas conscients.",
+        "translation": "Hitler wanted war, but many were not aware of it."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:devoir",
+    "language": "fr",
+    "word": "devoir",
+    "ipa": "/də.vwaʁ/",
+    "meaning": "duty",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "manquer à son devoir, manquer à tous ses devoirs",
+        "translation": "to fail in one's duty, duties"
+      },
+      {
+        "text": "Il est de mon devoir de protéger le roi.",
+        "translation": "It is my duty to protect the king."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:prendre",
+    "language": "fr",
+    "word": "prendre",
+    "ipa": "/pʁɑ̃.dʁə/",
+    "meaning": "to take",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "prends ma main",
+        "translation": "take my hand"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:mettre",
+    "language": "fr",
+    "word": "mettre",
+    "ipa": "/mɛtʁ/",
+    "meaning": "to put; to place",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Pas de porno lesbien, pas d'image d'homme se faisant mettre…",
+        "translation": "No lesbian porn, no image of a man penetrating himself..."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:donner",
+    "language": "fr",
+    "word": "donner",
+    "ipa": "/dɔ.ne/",
+    "meaning": "to give, to transfer the possession/holding of something to someone else",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Finalement, ayant perdu l’esprit sans ressource, il vint à donner dans la plus étrange pensée dont jamais fou se fût avisé dans le monde.",
+        "translation": "Finally, having lost his mind completely, he happened to come across the strangest thought in the world, of which no madman had ever conceived before."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:trouver",
+    "language": "fr",
+    "word": "trouver",
+    "ipa": "/tʁu.ve/",
+    "meaning": "to find; to retrieve something lost, turn up something hidden, or encounter something previously unknown to one",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Quand est-ce qu'elle a trouvé les clés ?",
+        "translation": "When did she find the keys?"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:aimer",
+    "language": "fr",
+    "word": "aimer",
+    "ipa": "/ɛ.me/",
+    "meaning": "to love",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Donne-moi une raison de t’aimer.",
+        "translation": "Give me a reason to like you."
+      },
+      {
+        "text": "J’aime cet homme-ci plus que tout au monde.",
+        "translation": "I love this man more than anything in the world."
+      },
+      {
+        "text": "Je t’aime.",
+        "translation": "I love you."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:regarder",
+    "language": "fr",
+    "word": "regarder",
+    "ipa": "/ʁə.ɡaʁ.de/",
+    "meaning": "to look at",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Tu regardes quoi ?",
+        "translation": "What are you looking at?"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:lire",
+    "language": "fr",
+    "word": "lire",
+    "ipa": "/liʁ/",
+    "meaning": "to read",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Le mot « lire » veut dire « to read ».",
+        "translation": "The word \"lire\" means \"to read\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:étudier",
+    "language": "fr",
+    "word": "étudier",
+    "ipa": "/e.ty.dje/",
+    "meaning": "to study",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "Les premiers auteurs qui ont étudié ce phénomène, Taupin, Piorry, Hourmann (Revue médicale française et étrangère, juillet 1839), qui lui a donné le nom d’autophonie, Hornemann, ont eu le tort, d’après l’auteur, de donner à ce signe une signification symptomatique trop étendue, et de créer des variétés purement artificielles, en admettant l’autophonie normale, ægophonique, bronchophonique, etc.",
+        "translation": "The first authors who studied this phenomenon, Taupin, Piorry, Hourmann (Revue médicale française et étrangère, July 1839), who gave it the name of autophony, Hornemann, had the mistake, according to the author, of giving this sign a symptomatic meaning that was too broad, and of creating purely artificial varieties, by admitting normal autophony, ægophonic, bronchophonic, etc."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:comprendre",
+    "language": "fr",
+    "word": "comprendre",
+    "ipa": "/kɔ̃.pʁɑ̃dʁ/",
+    "meaning": "to understand, comprehend",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "J'ai compris maintenant.",
+        "translation": "I understand now. (lit. I have understood now.)"
+      },
+      {
+        "text": "Il est trop intelligent pour ne pas comprendre ce que vous lui avez dit.",
+        "translation": "He is too intelligent not to understand what you told him."
+      },
+      {
+        "text": "Est-ce que vous avez bien compris ?",
+        "translation": "Did you understand?"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:avoir",
+    "language": "fr",
+    "word": "avoir",
+    "ipa": "/a.vwaʁ/",
+    "meaning": "to have; to own; to possess; to get",
+    "pos": "verb",
+    "sentences": [
+      {
+        "text": "J'ai beaucoup d'abonnés.",
+        "translation": "I have lots of followers."
+      },
+      {
+        "text": "J'aimerais bien avoir 20 dollars.",
+        "translation": "I would very much like to have 20 dollars."
+      },
+      {
+        "text": "Elle a eu une bonne note.",
+        "translation": "She got a good grade."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:père",
+    "language": "fr",
+    "word": "père",
+    "ipa": "/pɛʁ/",
+    "meaning": "father (parent)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « père » veut dire « father (parent) ».",
+        "translation": "The word \"père\" means \"father (parent)\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:mère",
+    "language": "fr",
+    "word": "mère",
+    "ipa": "/mɛʁ/",
+    "meaning": "mother",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « mère » veut dire « mother ».",
+        "translation": "The word \"mère\" means \"mother\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:sœur",
+    "language": "fr",
+    "word": "sœur",
+    "ipa": "/sœʁ/",
+    "meaning": "sister",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Quel âge a ta sœur ?",
+        "translation": "How old is your sister?"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:fils",
+    "language": "fr",
+    "word": "fils",
+    "ipa": "/fis/",
+    "meaning": "son",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « fils » veut dire « son ».",
+        "translation": "The word \"fils\" means \"son\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:tête",
+    "language": "fr",
+    "word": "tête",
+    "ipa": "/tɛt/",
+    "meaning": "head (part of the body)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "J'ai mal à la tête",
+        "translation": "I have a headache"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:pied",
+    "language": "fr",
+    "word": "pied",
+    "ipa": "/pje/",
+    "meaning": "foot",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « pied » veut dire « foot ».",
+        "translation": "The word \"pied\" means \"foot\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:œil",
+    "language": "fr",
+    "word": "œil",
+    "ipa": "/œj/",
+    "meaning": "eye, organ that is sensitive to light, helping organisms to see",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Le mot « œil » veut dire « eye ».",
+        "translation": "The word \"œil\" means \"eye\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:rouge",
+    "language": "fr",
+    "word": "rouge",
+    "ipa": "/ʁuʒ/",
+    "meaning": "red (of a red color)",
+    "pos": "adjective",
+    "sentences": [
+      {
+        "text": "Le sang est rouge.",
+        "translation": "Blood is red."
+      },
+      {
+        "text": "Je suis rouge.",
+        "translation": "I am red."
+      },
+      {
+        "text": "La voiture rouge est en panne.",
+        "translation": "The red car has broken down."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:vert",
+    "language": "fr",
+    "word": "vert",
+    "ipa": "/vɛʁ/",
+    "meaning": "green",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "capitalisme vert",
+        "translation": "eco-capitalism"
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:un",
+    "language": "fr",
+    "word": "un",
+    "ipa": "/œ̃/",
+    "meaning": "an, a",
+    "pos": "article",
+    "sentences": [
+      {
+        "text": "Le mot « un » veut dire « an ».",
+        "translation": "The word \"un\" means \"an\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:dix",
+    "language": "fr",
+    "word": "dix",
+    "ipa": "/dis/",
+    "meaning": "ten",
+    "pos": "numeral",
+    "sentences": [
+      {
+        "text": "Le mot « dix » veut dire « ten ».",
+        "translation": "The word \"dix\" means \"ten\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:pardon",
+    "language": "fr",
+    "word": "pardon",
+    "ipa": "/paʁ.dɔ̃/",
+    "meaning": "excuse me",
+    "pos": "interjection",
+    "sentences": [
+      {
+        "text": "Le mot « pardon » veut dire « excuse me ».",
+        "translation": "The word \"pardon\" means \"excuse me\"."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:pluie",
+    "language": "fr",
+    "word": "pluie",
+    "ipa": "/plɥi/",
+    "meaning": "rain",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Des pluies torrentielles se sont abattues la semaine dernière.",
+        "translation": "Torrential rain struck down last week."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:mer",
+    "language": "fr",
+    "word": "mer",
+    "ipa": "/mɛʁ/",
+    "meaning": "sea (large body of water)",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "J'aime, j'aime, j'aime la solitude parfois. mais j'aime pas les cris quand ils ne s'arrêtent pas, quand les émotions me plongent en mer enragée, quand le manque de moi me fait divaguer.",
+        "translation": "I love, I love, I sometimes love the loneliness/solitude. But I don't love the crying [cries] when it [they] won't stop, when the emotions plunge me into the enraged sea, when the absence of myself makes me wander."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  },
+  {
+    "id": "fr:lit",
+    "language": "fr",
+    "word": "lit",
+    "ipa": "/li/",
+    "meaning": "bed",
+    "pos": "noun",
+    "sentences": [
+      {
+        "text": "Où est-il? Il dort dans son lit.",
+        "translation": "Where is he? He's sleeping in his bed."
+      }
+    ],
+    "tags": [
+      "wiktionary",
+      "frequency",
+      "curated-primary"
+    ]
+  }
+]
